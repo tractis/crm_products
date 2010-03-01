@@ -8,3 +8,5 @@ en-US:
   create_product: Create product
   description: Description
   save_product: Save
+  select_products: Select the products (multiselect)
+  products: Products
