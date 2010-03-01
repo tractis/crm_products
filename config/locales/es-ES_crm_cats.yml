@@ -1,0 +1,10 @@
+es-ES:
+  language: Español (España)
+
+  # crm_products plugin internalization.
+  #----------------------------------------------------------------------------
+  product_title: Productos
+  product_created_on: Creado el {{value}}
+  create_product: Crear producto
+  description: Descrición
+  save_product: Guardar

@@ -1,0 +1,1 @@
+#require "crm_supervised_mailings/crm_supervised_mailings_view_helpers"

@@ -1,0 +1,8 @@
+- remote_form_for([:admin, @product], :html => one_submit_only(:product)) do |f|
+  = link_to_close new_admin_product_path
+  = f.error_messages
+  = render :partial => "admin/products/form", :locals => { :f => f }
+  .buttonbar
+    = f.submit t(:create_product)
+    #{t :or}
+    = link_to_cancel new_admin_product_path

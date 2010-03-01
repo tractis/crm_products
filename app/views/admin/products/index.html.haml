@@ -1,0 +1,10 @@
+= styles_for :product
+
+.title_tools
+  = link_to_inline(:create_product, new_admin_product_path, :text => t(:create_product))
+
+.title
+  %span#create_product_title #{t(:product_title)}
+.remote#create_product{ hidden }
+
+.list#products= render :partial => "product", :collection => @products

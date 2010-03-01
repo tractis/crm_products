@@ -1,0 +1,14 @@
+%li[product]{ highlightable(dom_id(product, :tools)) }
+
+  .indentfull
+    .tools{ invisible, :id => dom_id(product, :tools) }
+      = link_to_edit(product) << " | "
+      = link_to_confirm(product)
+      
+
+    %span.black #{product.name}
+    %tt
+      = "- #{h(product.description)}" unless product.description.blank?
+      
+    %dt{ :style => "padding: 2px 0px 0px 0px" }
+      %span.warn #{t(:product_created_on, product.created_at.to_date.to_s(:mmddyy))}

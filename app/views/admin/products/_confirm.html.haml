@@ -1,0 +1,5 @@
+.confirm[@product, :confirm]
+  #{t :product_confirm_delete}
+  #{t :delete} <b>#{@product.name}</b>?&nbsp;
+  = link_to_delete(@product) << " : "
+  = link_to_function(t(:no_button), "crm.flick('#{dom_id(@product, :confirm)}', 'remove')")

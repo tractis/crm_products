@@ -1,0 +1,8 @@
+page.call "crm.flip_form", :create_product
+
+if params[:cancel] != "true"
+  page[:create_product].replace_html :partial => "create"
+  page.call "crm.set_title", :create_product, t(:create_product)
+else
+  page.call "crm.set_title", :create_product, t(:product_title)
+end
