@@ -16,6 +16,4 @@ Then run the following command:
 
 Then restart your web server.
 
-License
-============
-MIT
+Copyright (c) 2010 by Tractis (https://www.tractis.com), released under the MIT License
