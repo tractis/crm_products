@@ -6,7 +6,7 @@ es-ES:
   product_title: Productos
   product_created_on: Creado el {{value}}
   create_product: Crear producto
-  description: Descrición
+  description: Descripción
   save_product: Guardar
   select_products: Seleccione los productos (multiselección)
   products: Productos
