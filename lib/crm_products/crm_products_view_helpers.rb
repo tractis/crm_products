@@ -5,7 +5,7 @@ module CrmProducts
     #----------------------------------------------------------------------------
     def products_for_index(model)
       model.class.to_s.constantize.find(model.id).products.inject([]) do |arr, product|
-        arr << product.name
+        arr << link_to(product.name, "#{send("search_#{model.class.to_s.downcase.pluralize}_path")}?query[products.id][match]=eq&query[products.id][value][]=#{product.id}")
       end.join(", ")
     end
     
