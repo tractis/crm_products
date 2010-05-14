@@ -4,7 +4,7 @@ module CrmProducts
     # Generate product links for use on asset index pages.
     #----------------------------------------------------------------------------
     def products_for_index(model)
-      model.products.inject([]) do |arr, product|
+      model.class.to_s.constantize.find(model.id).products.inject([]) do |arr, product|
         arr << product.name
       end.join(", ")
     end
